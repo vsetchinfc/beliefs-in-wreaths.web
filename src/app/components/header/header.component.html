@@ -1,1 +1,36 @@
-<p>header works!</p>
+<div class="container dark-background" style="border: solid 1px red;">
+  <div class="row form-inline justify-content-around">
+    <div class="col-4 text-center" style="border: solid 1px red;">
+    <h1>Beliefs in Wreaths</h1>
+    </div>
+    <div class="col-4 mt-3 text-center" style="border: solid 1px red;">
+      <app-logo-img ></app-logo-img>
+    </div>
+    <div class="col-4 text-center" style="border: solid 1px red;">
+      Social Icons
+    </div>
+  </div>
+
+  <div class="row">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" v-bind:class="{ 'show': show }">
+        <ul class="navbar-nav mr-auto" v-if="$themeConfig.nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <!-- <li class="nav-item active" v-for="item in $themeConfig.nav">
+            <a class="nav-link" :href="item.link">{{ item.text }}</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+</div>

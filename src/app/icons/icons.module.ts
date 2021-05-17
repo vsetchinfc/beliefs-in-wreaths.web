@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
+import { FeatherModule } from 'angular-feather';
+import { Github, Linkedin, Twitter } from 'angular-feather/icons';
 
+const icons = {
+  Twitter,
+  Linkedin,
+  Github,
+};
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [FeatherModule.pick(icons)],
+  exports: [FeatherModule],
 })
-export class IconsModule { }
+export class IconsModule {}

@@ -4,13 +4,15 @@
   font-weight: bold;
 }
 
-.nav-item {
-  .nav-link {
-    font-size: 14px;
-    font-weight: bold;
+.navbar {
+  .nav-item {
+    .nav-link {
+      font-size: 14px;
+      font-weight: bold;
 
-    &:hover {
-      color: grey;
+      &:hover {
+        color: grey;
+      }
     }
   }
 }

@@ -3,13 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  showNavbar = false;
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  toggleNavbar() {
+    this.showNavbar = !this.showNavbar;
   }
-
 }

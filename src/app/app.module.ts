@@ -8,7 +8,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LogoImgComponent } from './components/logo-img/logo-img.component';
-import { ImgCarouselComponent } from './components/img-carousel/img-carousel.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { ImgCarouselComponent } from './components/img-carousel/img-carousel.com
     FooterComponent,
     ProductCardComponent,
     LogoImgComponent,
-    ImgCarouselComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

@@ -1,0 +1,28 @@
+{
+  "npmScope": "beliefs-in-wreaths",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*",
+    "tsconfig.base.json": "*"
+  },
+  "projects": {
+    "beliefs-in-wreaths": {
+      "tags": []
+    },
+    "beliefs-in-wreaths-e2e": {
+      "tags": [],
+      "implicitDependencies": ["beliefs-in-wreaths"]
+    },
+    "core": {
+      "tags": []
+    }
+  },
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "newProjectRoot": ""
+}

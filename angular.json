@@ -1,10 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "d7d856ed-cb91-407c-9fad-19343fea3ff6"
+    "analytics": "d7d856ed-cb91-407c-9fad-19343fea3ff6",
+    "defaultCollection": "@nrwl/angular"
   },
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "",
   "projects": {
     "beliefs-in-wreaths": {
       "projectType": "application",
@@ -16,34 +17,32 @@
           "strict": true
         }
       },
-      "root": "",
-      "sourceRoot": "src",
+      "root": "apps/beliefs-in-wreaths",
+      "sourceRoot": "apps/beliefs-in-wreaths/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/beliefs-in-wreaths",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "outputPath": "dist/apps/beliefs-in-wreaths",
+            "index": "apps/beliefs-in-wreaths/src/index.html",
+            "main": "apps/beliefs-in-wreaths/src/main.ts",
+            "polyfills": "apps/beliefs-in-wreaths/src/polyfills.ts",
+            "tsConfig": "apps/beliefs-in-wreaths/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "apps/beliefs-in-wreaths/src/favicon.ico",
+              "apps/beliefs-in-wreaths/src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["apps/beliefs-in-wreaths/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "apps/beliefs-in-wreaths/src/environments/environment.ts",
+                  "with": "apps/beliefs-in-wreaths/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -88,17 +87,15 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
+            "main": "apps/beliefs-in-wreaths/src/test.ts",
+            "polyfills": "apps/beliefs-in-wreaths/src/polyfills.ts",
+            "tsConfig": "apps/beliefs-in-wreaths/tsconfig.spec.json",
+            "karmaConfig": "apps/beliefs-in-wreaths/karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "apps/beliefs-in-wreaths/src/favicon.ico",
+              "apps/beliefs-in-wreaths/src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["apps/beliefs-in-wreaths/src/styles.scss"],
             "scripts": []
           }
         },
@@ -106,13 +103,10 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "apps/beliefs-in-wreaths/tsconfig.app.json",
+              "apps/beliefs-in-wreaths/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -132,7 +126,68 @@
           "options": {}
         }
       }
+    },
+    "beliefs-in-wreaths-e2e": {
+      "root": "apps/beliefs-in-wreaths-e2e",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "apps/beliefs-in-wreaths-e2e/protractor.conf.js",
+            "devServerTarget": "beliefs-in-wreaths:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "beliefs-in-wreaths:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "apps/beliefs-in-wreaths-e2e/tsconfig.json",
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "core": {
+      "projectType": "library",
+      "root": "libs/core",
+      "sourceRoot": "libs/core/src",
+      "prefix": "beliefs-in-wreaths",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/core/src/**/*.ts",
+              "libs/core/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/core"],
+          "options": {
+            "jestConfig": "libs/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
-  "defaultProject": "beliefs-in-wreaths"
+  "defaultProject": "beliefs-in-wreaths",
+  "schematics": {
+    "@nrwl/angular:application": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {}
+  }
 }

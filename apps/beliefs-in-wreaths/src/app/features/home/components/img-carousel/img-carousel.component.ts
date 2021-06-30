@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-img-carousel',
+  selector: 'b-in-w-img-carousel',
   templateUrl: './img-carousel.component.html',
   styleUrls: ['./img-carousel.component.scss'],
 })

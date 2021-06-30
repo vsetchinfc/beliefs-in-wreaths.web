@@ -17,7 +17,8 @@
     "module": "es2020",
     "lib": ["es2018", "dom"],
     "paths": {
-      "@beliefs-in-wreaths/core": ["libs/core/src/index.ts"]
+      "@beliefs-in-wreaths/core": ["libs/core/src/index.ts"],
+      "@beliefs-in-wreaths/shared-ui": ["libs/shared-ui/src/index.ts"]
     },
     "rootDir": "."
   },

@@ -156,7 +156,7 @@
       "projectType": "library",
       "root": "libs/core",
       "sourceRoot": "libs/core/src",
-      "prefix": "beliefs-in-wreaths",
+      "prefix": "b-in-w",
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
@@ -181,7 +181,7 @@
       "projectType": "library",
       "root": "libs/shared-ui",
       "sourceRoot": "libs/shared-ui/src",
-      "prefix": "beliefs-in-wreaths",
+      "prefix": "b-in-w",
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",

@@ -19,7 +19,7 @@
       },
       "root": "apps/beliefs-in-wreaths",
       "sourceRoot": "apps/beliefs-in-wreaths/src",
-      "prefix": "app",
+      "prefix": "b-in-w",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

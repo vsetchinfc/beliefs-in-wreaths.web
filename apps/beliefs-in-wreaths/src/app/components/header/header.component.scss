@@ -1,5 +1,5 @@
 .form-inline {
-  color: #ffffff;
+  color: white;
   font-size: 18px;
   font-weight: bold;
 }
@@ -9,9 +9,10 @@
     .nav-link {
       font-size: 14px;
       font-weight: bold;
+      color: white;
 
       &:hover {
-        color: grey;
+        color: #eea8c2;
       }
     }
   }

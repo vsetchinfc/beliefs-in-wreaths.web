@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-logo-img',
+  selector: 'b-in-w-logo-img',
   templateUrl: './logo-img.component.html',
-  styleUrls: ['./logo-img.component.scss']
+  styleUrls: ['./logo-img.component.scss'],
 })
 export class LogoImgComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

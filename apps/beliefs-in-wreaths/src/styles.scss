@@ -3,7 +3,11 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
-.header-footer-background {
+.header-background {
+  background-color: #eea8c2;
+}
+
+.footer-background {
   background-color: #902c51;
 }
 

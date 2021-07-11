@@ -3,17 +3,33 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+// Site colours
+$b-in-w-primary-colour: #f2f2f2;
+$b-in-w-secondary-colour: #a6339e;
+$b-in-w-text-header-colour: #f26b8f;
+$b-in-w-ascent-colour: #98bf5e;
+$b-in-w-header-colour: $b-in-w-ascent-colour;
+$b-in-w-ascent-secondary-colour: #6e8c58;
+
 .header-background {
-  background-color: #eea8c2;
+  background-color: $b-in-w-header-colour;
 }
 
 .footer-background {
-  background-color: #902c51;
+  background-color: $b-in-w-ascent-secondary-colour;
 }
 
 .heading {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+}
+
+body {
+  background-color: $b-in-w-primary-colour;
+}
+
+h3 {
+  color: $b-in-w-text-header-colour;
 }
 
 /* style="border: solid 1px red;" */

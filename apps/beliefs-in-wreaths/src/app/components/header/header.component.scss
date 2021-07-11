@@ -1,21 +1,29 @@
+@import '../../../styles.scss';
+
 .form-inline {
-  color: white;
+  color: $b-in-w-primary-colour;
   font-size: 18px;
   font-weight: bold;
 }
 
 .navbar {
+  background-color: $b-in-w-ascent-secondary-colour;
+
   .nav-item {
     .nav-link {
+      color: $b-in-w-primary-colour !important; // TODO: remove !important!
       font-size: 14px;
       font-weight: bold;
-      color: white;
 
       &:hover {
-        color: #eea8c2;
+        color: #eea8c2 !important;
       }
     }
   }
+}
+
+.menu-text {
+  color: $b-in-w-primary-colour;
 }
 
 img {

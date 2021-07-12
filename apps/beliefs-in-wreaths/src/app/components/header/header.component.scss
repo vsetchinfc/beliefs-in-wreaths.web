@@ -6,17 +6,15 @@
   font-weight: bold;
 }
 
-.navbar {
+.navbar-light {
   background-color: $b-in-w-ascent-secondary-colour;
 
-  .nav-item {
-    .nav-link {
-      color: $b-in-w-primary-colour !important; // TODO: remove !important!
-      font-size: 14px;
-      font-weight: bold;
-
-      &:hover {
-        color: #eea8c2 !important;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $b-in-w-primary-colour;
+        font-size: 14px;
+        font-weight: bold;
       }
     }
   }

@@ -3,6 +3,8 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+// TODO: remove all occurrences of style in components
+
 // Site colours
 $b-in-w-primary-colour: #f2f2f2;
 $b-in-w-secondary-colour: #a6339e;
@@ -21,7 +23,6 @@ $b-in-w-ascent-secondary-colour: #6e8c58;
 
 .heading {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
 }
 
 body {

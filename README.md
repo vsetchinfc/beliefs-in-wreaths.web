@@ -1,7 +1,7 @@
 # beliefs-in-wreaths.web
 Beliefs in Wreaths Site
 
-
+TODO: Implement Resto template
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 

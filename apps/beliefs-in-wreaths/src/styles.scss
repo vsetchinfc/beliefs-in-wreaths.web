@@ -13,6 +13,56 @@ $b-in-w-ascent-colour: #98bf5e;
 $b-in-w-header-colour: $b-in-w-ascent-colour;
 $b-in-w-ascent-secondary-colour: #6e8c58;
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000;
+  background-color: #f4ede5;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+.boxed-page {
+  position: relative;
+  border-color: #ededed;
+  background-color: #fff;
+}
+.boxed-page .section-padding {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+@media (min-width: 1200px) {
+  .boxed-page {
+    margin: 30px;
+  }
+}
+
 .header-background {
   background-color: $b-in-w-header-colour;
 }
@@ -23,14 +73,6 @@ $b-in-w-ascent-secondary-colour: #6e8c58;
 
 .heading {
   font-family: 'Roboto', sans-serif;
-}
-
-body {
-  background-color: $b-in-w-primary-colour;
-}
-
-h2 {
-  color: $b-in-w-text-header-colour;
 }
 
 /* style="border: solid 1px red;" */

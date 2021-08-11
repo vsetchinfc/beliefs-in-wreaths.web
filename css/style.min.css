@@ -109,6 +109,11 @@ a:hover {
   object-position: center;
 }
 
+.img-fluid {
+  height: 300px;
+  width: auto;
+}
+
 .navbar-brand-center {
   padding-left: 70px;
   padding-right: 70px;

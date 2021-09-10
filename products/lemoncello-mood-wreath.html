@@ -122,11 +122,14 @@
                             </a>
                         </li>
                         <div class="d-flex flex-lg-row flex-column">
-                            <!-- TODO: uncomment menu after adding more pages -->
-                            <!-- <li class="nav-item active">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/products/index.html">Products</a>
+                            </li>
+                            <!-- TODO: uncomment menu after adding more pages -->
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
                             </li> -->
 
@@ -166,6 +169,13 @@
                         </li>
                     </ul> -->
                 </div>
+                <div>
+                    <button class="btn btn-light snipcart-checkout ">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="snipcart-items-count"></span>
+                    </button>
+                </div>
+
             </div>
         </nav>
 
@@ -182,7 +192,11 @@
                         </h2>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-lg-5 col-md-6 align-self-center py-5">
+                        <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
+                            <img src="../img/products/lemoncello-mood-wreath.jpeg" alt=""
+                                class="img-fluid shadow h-100">
+                        </div>
+                        <div class="col-lg-6 col-md-6 align-self-center py-5">
                             <!-- <h2 class="special-number">01.</h2> -->
                             <div class="dishes-text">
                                 <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
@@ -201,17 +215,16 @@
                                     For special occasions congratulatory. personalized or milestone events cards
                                     reflecting the occasion can be added for that professional touch.
                                 </p>
-                                <h3 class="special-dishes-price">$125.00</h3>
-                                <button class="snipcart-add-item btn btn-primary" data-item-id="starry-night"
-                                    data-item-price="125" data-item-url="/paintings/starry-night"
-                                    data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-                                    data-item-image="/assets/images/starry-night.jpg" data-item-name="The Starry Night">
+                                <h3 class="special-dishes-price">$145.00</h3>
+                                <button class="snipcart-add-item btn btn-primary" data-item-id="lemoncello-mood-wreath"
+                                    data-item-price="145" data-item-url="/products/lemoncello-mood-wreath.html"
+                                    data-item-description="Lemoncello Mood Wreath"
+                                    data-item-image="../img/products/lemoncello-mood-wreath.jpeg"
+                                    data-item-name="Lemoncello Mood Wreath" data-item-quantity="1"
+                                    data-item-max-quantity="1">
                                     Add to cart
                                 </button>
                             </div>
-                        </div>
-                        <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                            <img src="../img/lemoncello-mood-wreath.jpeg" alt="" class="img-fluid shadow h-100">
                         </div>
                     </div>
                 </div>
@@ -304,7 +317,8 @@
 
     <!-- shopping cart -->
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-    <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY" data-config-modal-style="side"></div>
+    <div hidden id="snipcart" data-api-key="N2Y4YTc1NTgtY2JlYy00MjkzLWEzY2UtYzRhNjkxY2Y4MjAwNjM3NjQ2Mjc1NTIzMTcxNjg5"
+        data-config-modal-style="side"></div>
 </body>
 
 </html>

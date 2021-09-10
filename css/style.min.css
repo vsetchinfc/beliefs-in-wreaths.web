@@ -110,7 +110,7 @@ a:hover {
 }
 
 .img-fluid {
-  height: 300px;
+  height: auto;
   width: auto;
 }
 

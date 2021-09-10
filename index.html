@@ -32,6 +32,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.min.css">
 
+    <!-- Shopping Cart -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
@@ -111,7 +114,7 @@
                     <span class="lnr lnr-menu"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex justify-content-between">
                         <li class="nav-item only-desktop">
                             <a class="nav-link" id="side-nav-open" href="#">
@@ -119,11 +122,14 @@
                             </a>
                         </li>
                         <div class="d-flex flex-lg-row flex-column">
-                            <!-- TODO: uncomment menu after adding more pages -->
-                            <!-- <li class="nav-item active">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/products/index.html">Products</a>
+                            </li>
+                            <!-- TODO: uncomment menu after adding more pages -->
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
                             </li> -->
 
@@ -163,6 +169,13 @@
                         </li>
                     </ul> -->
                 </div>
+                <div>
+                    <button class="btn btn-light snipcart-checkout ">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="snipcart-items-count"></span>
+                    </button>
+                </div>
+
             </div>
         </nav>
 
@@ -249,20 +262,22 @@
                                     <div class="col-md-4 col-sm-12">
                                         <a href="#" class="thumb-menu">
                                             <img class="img-fluid img-cover"
-                                                src="img/spring-is-in-the-air-wreath.jpg" />
-                                            <h6>Spring is in the Air Wreath</h6>
+                                                src="img/products/spring-is-in-the-air-wreath.jpg" />
+                                            <h6><a href="./products/spring-is-in-the-air-wreath.html">Spring is in the
+                                                    Air Wreath</a></h6>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                         <a href="#" class="thumb-menu">
                                             <img class="img-fluid img-cover"
-                                                src="img/merging-hues-of-pink-wreath.jpg" />
-                                            <h6>Merging Hues of Pink Wreath</h6>
+                                                src="img/products/merging-hues-of-pink-wreath.jpg" />
+                                            <h6><a href="./products/merging-hues-of-pink-wreath.html">Merging Hues of Pink Wreath</a></h6>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-12">
-                                        <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover" src="img/toffee-and-cream-wreath.jpg" />
+                                        <a href="products/toffee-and-cream-wreath.html" class="thumb-menu">
+                                            <img class="img-fluid img-cover"
+                                                src="img/products/toffee-and-cream-wreath.jpg" />
                                             <h6>Toffee and Cream Wreath</h6>
                                         </a>
                                     </div>
@@ -331,7 +346,7 @@
         Summer Vibes Wreath				$180	summer-vibes-wreath.jpg
         Sparkling Rosè Wreath			$170	sparkling-rose-wreath.jpg
         Beaut Jute Wreath				$125	beaut-jute-wreath.jpg
-        Raspberry Lemonade Wreath		$135	raspberry-lemonade-wreath.jpg
+        Rasberry Lemonade Wreath		$135	raspberry-lemonade-wreath.jpg
         Lemoncello Mood Wreath			$125	lemoncello-mood-wreath.jpg
         Lavender Sunset Wreath			$145	lavender-sunset-wreath.jpg
         Floral Tranquillity Wreath		$130	floral-tranquillity-wreath.jpg
@@ -359,12 +374,12 @@
                             <!-- Start of Product entry -->
                             <div class="row">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/toffee-and-cream-wreath.jpg" alt="">
+                                    <img class="img-fluid" src="img/products/toffee-and-cream-wreath.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-8">
-                                    <h4>Toffee and Cream Wreath</h4>
+                                    <h4><a href="products/toffee-and-cream-wreath.html">Toffee and Cream Wreath</a></h4>
                                 </div>
                                 <div class="col-4">
                                     <h4 class="text-muted menu-price">$150</h4>
@@ -374,12 +389,13 @@
                             <!-- Start of Product entry -->
                             <div class="row mt-5">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/spring-is-in-the-air-wreath.jpg" alt="">
+                                    <img class="img-fluid" src="img/products/spring-is-in-the-air-wreath.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-8">
-                                    <h4>Spring is in the Air Wreath</h4>
+                                    <h4><a href="./products/spring-is-in-the-air-wreath.html">Spring is in the Air
+                                            Wreath</a></h4>
                                 </div>
                                 <div class="col-4">
                                     <h4 class="text-muted menu-price">$150</h4>
@@ -389,12 +405,12 @@
                             <!-- Start of Product entry -->
                             <div class="row mt-5">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/merging-hues-of-pink-wreath.jpg" alt="">
+                                    <img class="img-fluid" src="img/products/merging-hues-of-pink-wreath.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-8">
-                                    <h4>Merging Hues of Pink Wreath</h4>
+                                    <h4><a href="./products/merging-hues-of-pink-wreath.html">Merging Hues of Pink Wreath</a></h4>
                                 </div>
                                 <div class="col-4">
                                     <h4 class="text-muted menu-price">$150</h4>
@@ -410,12 +426,14 @@
                             <!-- Start of Product entry -->
                             <div class="row">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/summer-vibes-wreath.jpg" alt="">
+                                    <img class="img-fluid" src="img/products/summer-vibes-wreath.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-8">
-                                    <h4>Summer Vibes Wreath</h4>
+                                    <a href="products/summer-vibes-wreath.html">
+                                        <h4>Summer Vibes Wreath</h4>
+                                    </a>
                                 </div>
                                 <div class="col-4">
                                     <h4 class="text-muted menu-price">$180</h4>
@@ -425,12 +443,12 @@
                             <!-- Start of Product entry -->
                             <div class="row mt-5">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/sparkling-rose-wreath.jpg" alt="">
+                                    <img class="img-fluid" src="img/products/sparkling-rose-wreath.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-8">
-                                    <h4>Sparkling Rosè Wreath</h4>
+                                    <h4><a href="products/sparkling-rose-wreath.html">Sparkling Rosè Wreath</a></h4>
                                 </div>
                                 <div class="col-4">
                                     <h4 class="text-muted menu-price">$170</h4>
@@ -440,12 +458,12 @@
                             <!-- Start of Product entry -->
                             <div class="row mt-5">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/beaut-jute-wreath.jpg" alt="">
+                                    <img class="img-fluid" src="img/products/beaut-jute-wreath.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-8">
-                                    <h4>Beaut Jute Wreath</h4>
+                                    <h4><a href="products/beaut-jute-wreath.html">Beaut Jute Wreath</a></h4>
                                 </div>
                                 <div class="col-4">
                                     <h4 class="text-muted menu-price">$125</h4>
@@ -461,22 +479,23 @@
                             <!-- Start of Product entry -->
                             <div class="row">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/raspberry-lemonade-wreath.jpg" alt="">
+                                    <img class="img-fluid" src="img/products/raspberry-lemonade-wreath.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-8">
-                                    <h4>Raspberry Lemonade Wreath</h4>
+                                    <h4><a href="./products/raspberry-lemonade-wreath.html">Raspberry Lemonade
+                                            Wreath</a></h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price text-center">$135</h4>
+                                    <h4 class="text-muted menu-price">$135</h4>
                                 </div>
                             </div>
                             <!-- End of Product entry -->
                             <!-- Start of Product entry -->
                             <div class="row mt-5">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/lemoncello-mood-wreath.jpeg" alt="">
+                                    <img class="img-fluid" src="img/products/lemoncello-mood-wreath.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="row">
@@ -491,7 +510,7 @@
                             <!-- Start of Product entry -->
                             <div class="row mt-5">
                                 <div class="col-lg-12 text-center mb-3">
-                                    <img class="img-fluid" src="img/lavender-sunset-wreath.jpeg" alt="">
+                                    <img class="img-fluid" src="img/products/lavender-sunset-wreath.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="row">
@@ -859,6 +878,11 @@
 
     <!-- Main JS -->
     <script src="js/app.min.js "></script>
+
+    <!-- shopping cart -->
+    <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="N2Y4YTc1NTgtY2JlYy00MjkzLWEzY2UtYzRhNjkxY2Y4MjAwNjM3NjQ2Mjc1NTIzMTcxNjg5"
+        data-config-modal-style="side"></div>
 </body>
 
 </html>

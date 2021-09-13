@@ -1,24 +1,29 @@
-<div class="container">
-
-  <header>
+<header>
+  <div class="container">
     <div class="row">
       <div class="col">
         <b-in-w-header></b-in-w-header>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <div class="row">
-    <div class="col">
-      <router-outlet></router-outlet>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="row footer-background">
-    <div class="col">
-      <footer>
-        <app-footer></app-footer>
-      </footer>
+<footer>
+  <div class="container">
+    <div class="row footer-background">
+      <div class="col">
+          <app-footer></app-footer>
+      </div>
     </div>
   </div>
-</div>
+</footer>

@@ -76,3 +76,23 @@ h2 {
 // }
 
 /* style="border: solid 1px red;" */
+
+.nav-link {
+  color: #000;
+}
+
+a {
+  color: #f34949;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:hover,
+a:hover {
+  text-decoration: none;
+  color: #e22104;
+}

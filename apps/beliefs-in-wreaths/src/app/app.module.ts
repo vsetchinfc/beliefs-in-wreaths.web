@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LogoImgComponent } from './components/logo-img/logo-img.component';
+import { FontAwesomeModule } from ''
 
 @NgModule({
   declarations: [
@@ -15,10 +16,10 @@ import { LogoImgComponent } from './components/logo-img/logo-img.component';
     HeaderComponent,
     FooterComponent,
     ProductCardComponent,
-    LogoImgComponent,
+    LogoImgComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

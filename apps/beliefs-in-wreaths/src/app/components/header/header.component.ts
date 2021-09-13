@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+//import { faFacebook } from '@fortawesome/fontawesome-free';
+import { fa } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'b-in-w-header',
@@ -6,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
   showNavbar = false;
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   toggleNavbar() {
     this.showNavbar = !this.showNavbar;
+  }
+
+  get facebookIcon() {
+    return faFacebook;
   }
 }

@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
-//import { faFacebook } from '@fortawesome/fontawesome-free';
-import { fa } from '@fortawesome/fontawesome-svg-core';
-
+import { faInstagram, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'b-in-w-header',
   templateUrl: './header.component.html',
@@ -21,5 +18,13 @@ export class HeaderComponent implements OnInit {
 
   get facebookIcon() {
     return faFacebook;
+  }
+
+  get instagramIcon() {
+    return faInstagram;
+  }
+
+  get tiktokIcon() {
+    return faTiktok;
   }
 }

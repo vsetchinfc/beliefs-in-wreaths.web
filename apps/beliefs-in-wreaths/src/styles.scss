@@ -63,6 +63,13 @@ h2 {
   }
 }
 
+@media (min-width: 992px) {
+  .boxed-page .section-padding {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
 .header-background {
   background-color: $b-in-w-header-colour;
 }

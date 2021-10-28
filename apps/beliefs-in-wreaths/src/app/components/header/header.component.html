@@ -35,7 +35,7 @@
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         (click)="toggleNavbar()">
-        <span class="navbar-toggler-icon"></span>
+        <fa-icon [icon]="barsIcon"></fa-icon>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive" [class.show]="showNavbar">
         <ul class="navbar-nav mr-auto" v-if="$themeConfig.nav">
@@ -55,13 +55,13 @@
       </div>
     </div>
 
-    <div>
+    <!-- <div>
       <button class="btn btn-light snipcart-checkout">
         <h4>
           <i class="fa fa-shopping-cart"></i>
           <span class="snipcart-items-count"></span>
         </h4>
       </button>
-    </div>
+    </div> -->
   </nav>
 </div>

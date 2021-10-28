@@ -1,16 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { faInstagram, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import {
+  faInstagram,
+  faFacebook,
+  faTiktok,
+} from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'b-in-w-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() { }
+  constructor() {}
 
   showNavbar = false;
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   toggleNavbar() {
     this.showNavbar = !this.showNavbar;
@@ -26,5 +31,9 @@ export class HeaderComponent implements OnInit {
 
   get tiktokIcon() {
     return faTiktok;
+  }
+
+  get barsIcon() {
+    return faBars;
   }
 }

@@ -1,4 +1,3 @@
-/*<![CDATA[*/
 (function () {
   var scriptURL =
     "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
@@ -27,13 +26,17 @@
       storefrontAccessToken: "aad770cf457bb57a2d1097f843730cb6",
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent("product", {
-        id: "7437718388963",
-        node: document.getElementById("product-component-1640089548210"),
-        moneyFormat: "%24%7B%7Bamount%7D%7D",
-        options: getFullProductViewOptions(),
-      });
+      createComponent(ui, "giant-wreath-of-christmas", "7437718388963");
+      createComponent(ui, "home-of-the-bluebird", "7437719077091");
+    });
+  }
+
+  function createComponent(ui, elementId, productId) {
+    ui.createComponent("product", {
+      id: productId,
+      node: document.getElementById(elementId),
+      moneyFormat: "%24%7B%7Bamount%7D%7D",
+      options: getButtonOptions(),
     });
   }
 })();
-/*]]>*/

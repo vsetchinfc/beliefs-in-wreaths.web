@@ -1,5 +1,7 @@
-/*<![CDATA[*/
 (function () {
+  var productElementId = "product-component-1640089548210";
+  var productId = "7437718388963";
+
   var scriptURL =
     "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
   if (window.ShopifyBuy) {
@@ -11,6 +13,7 @@
   } else {
     loadScript();
   }
+
   function loadScript() {
     var script = document.createElement("script");
     script.async = true;
@@ -21,19 +24,11 @@
     ).appendChild(script);
     script.onload = ShopifyBuyInit;
   }
+
   function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: "beliefs-in-wreaths-decor-studio.myshopify.com",
-      storefrontAccessToken: "aad770cf457bb57a2d1097f843730cb6",
-    });
+    var client = buildClient();
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent("product", {
-        id: "7437718388963",
-        node: document.getElementById("product-component-1640089548210"),
-        moneyFormat: "%24%7B%7Bamount%7D%7D",
-        options: getFullProductViewOptions(),
-      });
+      createFullPageComponent(ui, productElementId, productId);
     });
   }
 })();
-/*]]>*/

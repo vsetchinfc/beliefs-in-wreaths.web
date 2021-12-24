@@ -1,6 +1,18 @@
 (function () {
+  const productElements = [
+    {
+      productElementId: "giant-wreath-of-christmas",
+      productId: "7437718388963",
+    },
+    {
+      productElementId: "home-of-the-bluebird",
+      productId: "7437719077091",
+    },
+  ];
+
   var scriptURL =
     "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+
   if (window.ShopifyBuy) {
     if (window.ShopifyBuy.UI) {
       ShopifyBuyInit();
@@ -21,22 +33,15 @@
     script.onload = ShopifyBuyInit;
   }
   function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: "beliefs-in-wreaths-decor-studio.myshopify.com",
-      storefrontAccessToken: "aad770cf457bb57a2d1097f843730cb6",
-    });
+    var client = buildClient();
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      createComponent(ui, "giant-wreath-of-christmas", "7437718388963");
-      createComponent(ui, "home-of-the-bluebird", "7437719077091");
-    });
-  }
-
-  function createComponent(ui, elementId, productId) {
-    ui.createComponent("product", {
-      id: productId,
-      node: document.getElementById(elementId),
-      moneyFormat: "%24%7B%7Bamount%7D%7D",
-      options: getButtonOptions(),
+      productElements.forEach(function (productElement) {
+        createButtonComponent(
+          ui,
+          productElement.productElementId,
+          productElement.productId
+        );
+      });
     });
   }
 })();

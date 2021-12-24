@@ -1,3 +1,28 @@
+function buildClient() {
+  return ShopifyBuy.buildClient({
+    domain: "beliefs-in-wreaths-decor-studio.myshopify.com",
+    storefrontAccessToken: "aad770cf457bb57a2d1097f843730cb6",
+  });
+}
+
+function createButtonComponent(ui, elementId, productId) {
+  ui.createComponent("product", {
+    id: productId,
+    node: document.getElementById(elementId),
+    moneyFormat: "%24%7B%7Bamount%7D%7D",
+    options: getButtonOptions(),
+  });
+}
+
+function createFullPageComponent(ui, elementId, productId) {
+  ui.createComponent("product", {
+    id: productId,
+    node: document.getElementById(elementId),
+    moneyFormat: "%24%7B%7Bamount%7D%7D",
+    options: getFullProductViewOptions(),
+  });
+}
+
 function getButtonOptions() {
   return {
     product: {

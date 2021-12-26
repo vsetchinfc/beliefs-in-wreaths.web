@@ -8,6 +8,10 @@
       productElementId: "home-of-the-bluebird",
       productId: "7437719077091",
     },
+    {
+      productElementId: "magnolias-garden-wreath",
+      productId: "7502214103267",
+    },
   ];
 
   var scriptURL =

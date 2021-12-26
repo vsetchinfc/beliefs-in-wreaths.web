@@ -1,6 +1,7 @@
 (function () {
-  var productElementId = "product-component-1640091282721";
-  var productId = "7437719077091";
+  // include variables below in product page with product's IDs
+  // var productElementId = "product-component-1640520756591";
+  // var productId = "7502214103267";
 
   var scriptURL =
     "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";

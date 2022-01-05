@@ -12,6 +12,10 @@
       productElementId: "magnolias-garden-wreath",
       productId: "7502214103267",
     },
+    {
+      productElementId: "toffee-and-cream-wreath",
+      productId: "7437718290659",
+    },
   ];
 
   var scriptURL =

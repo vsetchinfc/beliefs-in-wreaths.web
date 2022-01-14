@@ -16,6 +16,10 @@
       productElementId: "toffee-and-cream-wreath",
       productId: "7437718290659",
     },
+    {
+      productElementId: "spring-is-in-the-air-wreath",
+      productId: "7437719339235",
+    },
   ];
 
   var scriptURL =

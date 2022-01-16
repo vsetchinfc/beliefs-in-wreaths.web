@@ -24,6 +24,10 @@
       productElementId: "summer-vibes-wreath",
       productId: "7437718356195",
     },
+    {
+      productElementId: "merging-hues-of-pink-wreath",
+      productId: "7437719404771",
+    },
   ];
 
   var scriptURL =

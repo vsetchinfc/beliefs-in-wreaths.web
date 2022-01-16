@@ -32,9 +32,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.min.css">
 
-    <!-- Shopping Cart -->
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
-
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
@@ -187,15 +184,6 @@
                         </li>
                     </ul> -->
                 </div>
-                <div>
-                    <button class="btn btn-light snipcart-checkout ">
-                        <h4>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span class="snipcart-items-count"></span>
-                        </h4>
-                    </button>
-                </div>
-
             </div>
         </nav>
 
@@ -203,46 +191,7 @@
         <section id="gtco-special-dishes" class="bg-grey section-padding">
             <div class="container">
                 <div class="section-content">
-                    <div class="heading-section text-center">
-                        <div class="subheading">
-                            All Year Wreaths
-                        </div>
-                        <h2>
-                            Merging Hues of Pink Wreath
-                        </h2>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
-                            <img src="/img/products/wreaths/merging-hues-of-pink-wreath/merging-hues-of-pink-wreath0.webp"
-                                alt="" class="img-fluid shadow">
-                        </div>
-                        <div class="col-lg-6 col-md-6 align-self-center py-5">
-                            <!-- <h2 class="special-number">01.</h2> -->
-                            <div class="dishes-text">
-                                <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
-                                <p class="pt-3">The Merging Hues of Pink Wreath.
-                                    Inspire Spring, embrace it's warmth and power through the inclement months
-                                    surrounding yourself with the floral colours and shades of the season that
-                                    embraces
-                                    new life kicking off that very atmosphere your own house will empower.
-                                    Designed to enhance all styles of decor. Ideal presentation for a front door and
-                                    marvelous for entry halls and especially bursting any room in your home to life.
-                                    All materials are faux and designed for a lifetime of enjoyment.
-                                </p>
-                                <p>Measurements: weight: 840gms, diameter: 50cm</p>
-                                <h3 class="special-dishes-price">$150.00</h3>
-                                <button class="snipcart-add-item btn btn-primary"
-                                    data-item-id="merging-hues-of-pink-wreath" data-item-price="150"
-                                    data-item-url="/products/wreaths/merging-hues-of-pink-wreath.html"
-                                    data-item-description="Merging Hues of Pink Wreath"
-                                    data-item-image="/img/products/wreaths/merging-hues-of-pink-wreath/merging-hues-of-pink-wreath0.webp"
-                                    data-item-name="Merging Hues of Pink Wreath" data-item-quantity="1"
-                                    data-item-max-quantity="1">
-                                    Add to cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    <div id='merging-hues-of-pink-wreath-full-details'></div>
                 </div>
             </div>
         </section>
@@ -331,10 +280,14 @@
     <!-- Main JS -->
     <script src="/js/app.min.js "></script>
 
-    <!-- shopping cart -->
-    <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-    <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
-        data-config-modal-style="side"></div>
+    <!-- Shopify -->
+    <script>
+        var productElementId = "merging-hues-of-pink-wreath-full-details";
+        var productId = "7437719404771";
+    </script>
+
+    <script src="/js/shopify/shopify-common.js"></script>
+    <script src="/js/shopify/full_product_details.js"></script>
 </body>
 
 </html>

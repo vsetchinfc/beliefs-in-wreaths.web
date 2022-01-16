@@ -20,6 +20,10 @@
       productElementId: "spring-is-in-the-air-wreath",
       productId: "7437719339235",
     },
+    {
+      productElementId: "summer-vibes-wreath",
+      productId: "7437718356195",
+    },
   ];
 
   var scriptURL =

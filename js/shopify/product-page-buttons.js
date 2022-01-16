@@ -28,6 +28,10 @@
       productElementId: "merging-hues-of-pink-wreath",
       productId: "7437719404771",
     },
+    {
+      productElementId: "beaut-jute-wreath",
+      productId: "7437718257891",
+    },
   ];
 
   var scriptURL =

@@ -32,6 +32,10 @@
       productElementId: "beaut-jute-wreath",
       productId: "7437718257891",
     },
+    {
+      productElementId: "lavender-sunset-wreath",
+      productId: "7437719208163",
+    },
   ];
 
   var scriptURL =

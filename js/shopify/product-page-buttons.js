@@ -56,6 +56,10 @@
       productElementId: "love-grows-here-wreath",
       productId: "7522717368547",
     },
+    {
+      productElementId: "love-is-homemade-wreath",
+      productId: "7522872754403",
+    },
   ];
 
   var scriptURL =

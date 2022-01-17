@@ -44,6 +44,10 @@
       productElementId: "fuchsia-christmas-wreath",
       productId: "7522271035619",
     },
+    {
+      productElementId: "the-house-of-elf-wreath",
+      productId: "7437719306467",
+    },
   ];
 
   var scriptURL =

@@ -32,9 +32,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.min.css">
 
-    <!-- Shopping Cart -->
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
-
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
@@ -194,53 +191,7 @@
         <section id="gtco-special-dishes" class="bg-grey section-padding">
             <div class="container">
                 <div class="section-content">
-                    <div class="heading-section text-center">
-                        <div class="subheading">
-                            All Year Wreaths
-                        </div>
-                        <h2>
-                            Love Grows Here Wreath
-                        </h2>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
-                            <img src="/img/products/wreaths/love-grows-here-wreath/love-grows-here-wreath0.webp" alt=""
-                                class="img-fluid shadow">
-                        </div>
-                        <div class="col-lg-6 col-md-6 align-self-center py-5">
-                            <!-- <h2 class="special-number">01.</h2> -->
-                            <div class="dishes-text">
-                                <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
-                                <p class="pt-3">Are you ready for Valentines Day?
-                                    We have been busy making a range of Valentines Wreaths to spread some love.
-                                    We are happy to introduce our latest creation <strong>Love Grows Here
-                                        Wreath</strong>, which can be
-                                    displayed on Valentines Day or throughout the entire year.
-                                    A gorgeous selection of pastel premium quality real touch roses, poppies, rosebuds,
-                                    dusty Miller, ferns, Eucalyptus, berries presented on a unique rattan wreath base.
-                                </p>
-                                <p>
-                                    This beautiful elegant wreath makes a beautiful decoration for any door or wall.
-                                    Perfect as a table Centrepiece too.
-                                    Carved Wooden plaque with the message can be added on request.
-                                </p>
-                                <p>
-                                    Measurements: 50cm in diameter with branches
-                                </p>
-                                <h3 class="special-dishes-price">$145.00</h3>
-                                <!-- <h4 class="item-sold">SOLD</h4>
-                                New orders welcome. Contact us and we will be happy to create similar wreath for you. -->
-                                <button class="snipcart-add-item btn btn-primary" data-item-id="love-grows-here-wreath"
-                                    data-item-price="145" data-item-url="/products/wreaths/love-grows-here-wreath.html"
-                                    data-item-description="Love Grows Here Wreath"
-                                    data-item-image="/img/products/wreaths/love-grows-here-wreath/love-grows-here-wreath0.webp"
-                                    data-item-name="Love Grows Here Wreath" data-item-quantity="1"
-                                    data-item-max-quantity="1">
-                                    Add to cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    <div id='love-grows-here-wreath-full-details'></div>
                 </div>
             </div>
         </section>
@@ -313,7 +264,6 @@
         </footer>
     </div>
 
-    </div>
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
@@ -329,10 +279,14 @@
     <!-- Main JS -->
     <script src="/js/app.min.js "></script>
 
-    <!-- shopping cart -->
-    <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-    <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
-        data-config-modal-style="side"></div>
+    <!-- Shopify -->
+    <script>
+        var productElementId = "love-grows-here-wreath-full-details";
+        var productId = "7522717368547";
+    </script>
+
+    <script src="/js/shopify/shopify-common.js"></script>
+    <script src="/js/shopify/full_product_details.js"></script>
 </body>
 
 </html>

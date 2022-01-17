@@ -52,6 +52,10 @@
       productElementId: "elves-warm-greetings-wreath",
       productId: "7522403647715",
     },
+    {
+      productElementId: "love-grows-here-wreath",
+      productId: "7522717368547",
+    },
   ];
 
   var scriptURL =

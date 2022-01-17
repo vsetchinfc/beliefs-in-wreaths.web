@@ -36,6 +36,10 @@
       productElementId: "lavender-sunset-wreath",
       productId: "7437719208163",
     },
+    {
+      productElementId: "sparkling-rose-wreath",
+      productId: "7437718323427",
+    },
   ];
 
   var scriptURL =

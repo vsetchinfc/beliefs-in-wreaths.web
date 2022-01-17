@@ -40,6 +40,10 @@
       productElementId: "sparkling-rose-wreath",
       productId: "7437718323427",
     },
+    {
+      productElementId: "fuchsia-christmas-wreath",
+      productId: "7522271035619",
+    },
   ];
 
   var scriptURL =

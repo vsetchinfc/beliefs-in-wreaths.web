@@ -48,6 +48,10 @@
       productElementId: "the-house-of-elf-wreath",
       productId: "7437719306467",
     },
+    {
+      productElementId: "elves-warm-greetings-wreath",
+      productId: "7522403647715",
+    },
   ];
 
   var scriptURL =

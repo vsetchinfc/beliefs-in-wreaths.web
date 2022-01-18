@@ -5,12 +5,35 @@ function buildClient() {
   });
 }
 
-function createButtonComponent(ui, elementId, productId) {
+function createProductDetailsComponent(ui, elementId, productId) {
   ui.createComponent("product", {
     id: productId,
     node: document.getElementById(elementId),
-    moneyFormat: "%24%7B%7Bamount%7D%7D",
-    options: getButtonOptions(),
+    moneyFormat: getMoneyFormat(),
+    options: getProductDetailsOptions(),
+  });
+}
+
+function createViewProductComponent(
+  ui,
+  elementId,
+  productId,
+  viewProductPageUrl
+) {
+  ui.createComponent("product", {
+    id: productId,
+    node: document.getElementById(elementId),
+    moneyFormat: getMoneyFormat(),
+    options: getViewProductButtonOptions(viewProductPageUrl),
+  });
+}
+
+function createAddToCartButtonComponent(ui, elementId, productId) {
+  ui.createComponent("product", {
+    id: productId,
+    node: document.getElementById(elementId),
+    moneyFormat: getMoneyFormat(),
+    options: getAddToCartButtonOptions(),
   });
 }
 
@@ -18,12 +41,61 @@ function createFullPageComponent(ui, elementId, productId) {
   ui.createComponent("product", {
     id: productId,
     node: document.getElementById(elementId),
-    moneyFormat: "%24%7B%7Bamount%7D%7D",
+    moneyFormat: getMoneyFormat(),
     options: getFullProductViewOptions(),
   });
 }
 
-function getButtonOptions() {
+function getMoneyFormat() {
+  return "%24%7B%7Bamount%7D%7D";
+}
+
+function getProductDetailsOptions() {
+  return {
+    product: {
+      styles: {
+        product: {
+          "@media (min-width: 601px)": {
+            "max-width": "calc(25% - 20px)",
+            "margin-left": "20px",
+            "margin-bottom": "50px",
+          },
+        },
+        button: {},
+        price: {},
+        variantTitle: {},
+      },
+      contents: {
+        img: true,
+        title: true,
+        variantTitle: false,
+        price: false,
+        button: false,
+      },
+      width: "100%",
+      layout: "vertical",
+      text: {
+        button: "",
+      },
+      events: {},
+    },
+    productSet: {
+      styles: {
+        products: {
+          "@media (min-width: 601px)": {
+            "margin-left": "-20px",
+          },
+        },
+      },
+    },
+    modalProduct: {},
+    option: {},
+    cart: {},
+    toggle: {},
+  };
+}
+
+function getViewProductButtonOptions(viewProductPageUrl) {
   return {
     product: {
       styles: {
@@ -46,14 +118,37 @@ function getButtonOptions() {
           "padding-left": "30px",
           "padding-right": "30px",
         },
+        price: {
+          "font-size": "20px",
+          "font-weight": "bold",
+        },
+        variantTitle: {
+          "font-size": "20px",
+          "font-weight": "bold",
+        },
       },
+      viewProductPageUrl: viewProductPageUrl,
+      buttonDestination: "modal",
       contents: {
         img: false,
         title: false,
+        variantTitle: false,
         price: false,
+        button: true,
       },
+      width: "100%",
+      layout: "vertical",
       text: {
-        button: "Add to cart",
+        button: "View product",
+      },
+      events: {
+        addVariantToCart: function (product) {},
+        updateQuantity: function (product) {},
+        openModal: function (product) {
+          redirectToProductPage(product.config.product.viewProductPageUrl);
+        },
+        openOnlineStore: function (product) {},
+        openCheckout: function (product) {},
       },
     },
     productSet: {
@@ -68,9 +163,9 @@ function getButtonOptions() {
     modalProduct: {
       contents: {
         img: false,
-        imgWithCarousel: true,
+        imgWithCarousel: false,
         button: false,
-        buttonWithQuantity: true,
+        buttonWithQuantity: false,
       },
       styles: {
         product: {
@@ -131,6 +226,143 @@ function getButtonOptions() {
     },
   };
 }
+
+function getAddToCartButtonOptions() {
+  return {
+    product: {
+      styles: {
+        product: {
+          "@media (min-width: 601px)": {
+            "max-width": "calc(25% - 20px)",
+            "margin-left": "20px",
+            "margin-bottom": "50px",
+          },
+        },
+        button: {
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          "background-color": "#f90000",
+          ":focus": {
+            "background-color": "#e00000",
+          },
+          "border-radius": "40px",
+          "padding-left": "30px",
+          "padding-right": "30px",
+        },
+        price: {
+          "font-size": "20px",
+          "font-weight": "bold",
+        },
+        variantTitle: {
+          "font-size": "20px",
+          "font-weight": "bold",
+        },
+      },
+      //buttonDestination: "modal",
+      contents: {
+        img: false,
+        title: false,
+        variantTitle: true,
+        price: true,
+        button: true,
+      },
+      width: "100%",
+      layout: "vertical",
+      text: {
+        button: "Add to Cart",
+      },
+      events: {
+        addVariantToCart: function (product) {},
+        updateQuantity: function (product) {},
+        openModal: function (product) {
+          openModal();
+        },
+        openOnlineStore: function (product) {},
+        openCheckout: function (product) {},
+      },
+    },
+    productSet: {
+      styles: {
+        products: {
+          "@media (min-width: 601px)": {
+            "margin-left": "-20px",
+          },
+        },
+      },
+    },
+    modalProduct: {
+      contents: {
+        img: false,
+        imgWithCarousel: false,
+        button: false,
+        buttonWithQuantity: false,
+      },
+      styles: {
+        product: {
+          "@media (min-width: 601px)": {
+            "max-width": "100%",
+            "margin-left": "0px",
+            "margin-bottom": "0px",
+          },
+        },
+        button: {
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          "background-color": "#f90000",
+          ":focus": {
+            "background-color": "#e00000",
+          },
+          "border-radius": "40px",
+          "padding-left": "30px",
+          "padding-right": "30px",
+        },
+      },
+      text: {
+        button: "Add to cart",
+      },
+    },
+    option: {},
+    cart: {
+      styles: {
+        button: {
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          "background-color": "#f90000",
+          ":focus": {
+            "background-color": "#e00000",
+          },
+          "border-radius": "40px",
+        },
+      },
+      text: {
+        total: "Subtotal",
+        button: "Checkout",
+      },
+    },
+    toggle: {
+      styles: {
+        toggle: {
+          "background-color": "#f90000",
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          ":focus": {
+            "background-color": "#e00000",
+          },
+        },
+      },
+    },
+  };
+}
+
+var redirectToProductPage = function (viewProductPageUrl) {
+  debugger;
+  console.log("redirecting to " + viewProductPageUrl);
+  location.replace(viewProductPageUrl);
+};
 
 function getFullProductViewOptions() {
   return {

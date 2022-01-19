@@ -3,63 +3,53 @@
     // {
     //   productElementId: "giant-wreath-of-christmas",
     //   productId: "7437718388963",
-    //   productPageUrl: "",
     // },
     // {
     //   productElementId: "home-of-the-bluebird",
     //   productId: "7437719077091",
-    //   productPageUrl: "",
     // },
     // {
     //   productElementId: "magnolias-garden-wreath",
     //   productId: "7502214103267",
-    //   productPageUrl: "",
-    // },
-    // {
-    //   productElementId: "toffee-and-cream-wreath",
-    //   productId: "7437718290659",
-    //   productPageUrl: "",
-    // },
-    // {
-    //   productElementId: "spring-is-in-the-air-wreath",
-    //   productId: "7437719339235",
-    //   productPageUrl: "",
-    // },
-    // {
-    //   productElementId: "summer-vibes-wreath",
-    //   productId: "7437718356195",
-    //   productPageUrl: "",
-    // },
-    // {
-    //   productElementId: "merging-hues-of-pink-wreath",
-    //   productId: "7437719404771",
-    //   productPageUrl: "",
-    // },
-    // {
-    //   productElementId: "beaut-jute-wreath",
-    //   productId: "7437718257891",
-    //   productPageUrl: "",
     // },
     {
+      productDetailsElementId: "toffee-and-cream-wreath-details",
+      addToCartElementId: "toffee-and-cream-wreath-add-to-cart",
+      productId: "7437718290659",
+    },
+    {
+      productDetailsElementId: "spring-is-in-the-air-wreath-details",
+      addToCartElementId: "spring-is-in-the-air-wreath-add-to-cart",
+      productId: "7437719339235",
+    },
+    {
+      productDetailsElementId: "summer-vibes-wreath-details",
+      addToCartElementId: "summer-vibes-wreath-add-to-cart",
+      productId: "7437718356195",
+    },
+    {
+      productDetailsElementId: "merging-hues-of-pink-wreath-details",
+      addToCartElementId: "merging-hues-of-pink-wreath-add-to-cart",
+      productId: "7437719404771",
+    },
+    {
+      productDetailsElementId: "beaut-jute-wreath-details",
+      addToCartElementId: "beaut-jute-wreath-add-to-cart",
+      productId: "7437718257891",
+    },
+    {
       productDetailsElementId: "lavender-sunset-wreath-details",
-      viewProductElementId: "lavender-sunset-wreath-view-product",
-      viewProductPageUrl: "/products/wreaths/lavender-sunset-wreath.html",
       addToCartElementId: "lavender-sunset-wreath-add-to-cart",
       productId: "7437719208163",
     },
-    // {
-    //   productElementId: "lavender-sunset-wreath",
-    //   productId: "7437719208163",
-    // },
-    // {
-    //   productElementId: "sparkling-rose-wreath",
-    //   productId: "7437718323427",
-    //   productPageUrl: "",
-    // },
+    {
+      productDetailsElementId: "sparkling-rose-wreath-details",
+      addToCartElementId: "sparkling-rose-wreath-add-to-cart",
+      productId: "7437718323427",
+    },
     // {
     //   productElementId: "fuchsia-christmas-wreath",
     //   productId: "7522271035619",
-    //   productPageUrl: "",
     // },
     // {
     //   productElementId: "the-house-of-elf-wreath",
@@ -68,19 +58,14 @@
     // {
     //   productElementId: "elves-warm-greetings-wreath",
     //   productId: "7522403647715",
-    //   productPageUrl: "",
     // },
     {
       productDetailsElementId: "love-grows-here-wreath-details",
-      viewProductElementId: "love-grows-here-wreath-view-product",
-      viewProductPageUrl: "/products/wreaths/love-grows-here-wreath.html",
       addToCartElementId: "love-grows-here-wreath-add-to-cart",
       productId: "7522717368547",
     },
     {
       productDetailsElementId: "love-is-homemade-wreath-details",
-      viewProductElementId: "love-is-homemade-wreath-view-product",
-      viewProductPageUrl: "/products/wreaths/love-is-homemade-wreath.html",
       addToCartElementId: "love-is-homemade-wreath-add-to-cart",
       productId: "7522872754403",
     },
@@ -121,12 +106,6 @@
           ui,
           productElement.addToCartElementId,
           productElement.productId
-        );
-        createViewProductComponent(
-          ui,
-          productElement.viewProductElementId,
-          productElement.productId,
-          productElement.viewProductPageUrl
         );
       });
     });

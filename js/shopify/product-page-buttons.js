@@ -1,17 +1,20 @@
 (function () {
   const productElements = [
-    // {
-    //   productElementId: "giant-wreath-of-christmas",
-    //   productId: "7437718388963",
-    // },
-    // {
-    //   productElementId: "home-of-the-bluebird",
-    //   productId: "7437719077091",
-    // },
-    // {
-    //   productElementId: "magnolias-garden-wreath",
-    //   productId: "7502214103267",
-    // },
+    {
+      productDetailsElementId: "giant-wreath-of-christmas-details",
+      addToCartElementId: "giant-wreath-of-christmas-add-to-cart",
+      productId: "7437718388963",
+    },
+    {
+      productDetailsElementId: "home-of-the-bluebird-details",
+      addToCartElementId: "home-of-the-bluebird-add-to-cart",
+      productId: "7437719077091",
+    },
+    {
+      productDetailsElementId: "magnolias-garden-wreath-details",
+      addToCartElementId: "magnolias-garden-wreath-add-to-cart",
+      productId: "7502214103267",
+    },
     {
       productDetailsElementId: "toffee-and-cream-wreath-details",
       addToCartElementId: "toffee-and-cream-wreath-add-to-cart",
@@ -47,18 +50,21 @@
       addToCartElementId: "sparkling-rose-wreath-add-to-cart",
       productId: "7437718323427",
     },
-    // {
-    //   productElementId: "fuchsia-christmas-wreath",
-    //   productId: "7522271035619",
-    // },
-    // {
-    //   productElementId: "the-house-of-elf-wreath",
-    //   productId: "7437719306467",
-    // },
-    // {
-    //   productElementId: "elves-warm-greetings-wreath",
-    //   productId: "7522403647715",
-    // },
+    {
+      productDetailsElementId: "fuchsia-christmas-wreath-details",
+      addToCartElementId: "fuchsia-christmas-wreath-add-to-cart",
+      productId: "7522271035619",
+    },
+    {
+      productDetailsElementId: "the-house-of-elf-wreath-details",
+      addToCartElementId: "the-house-of-elf-wreath-add-to-cart",
+      productId: "7437719306467",
+    },
+    {
+      productDetailsElementId: "elves-warm-greetings-wreath-details",
+      addToCartElementId: "elves-warm-greetings-wreath-add-to-cart",
+      productId: "7522403647715",
+    },
     {
       productDetailsElementId: "love-grows-here-wreath-details",
       addToCartElementId: "love-grows-here-wreath-add-to-cart",

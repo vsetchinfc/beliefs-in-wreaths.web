@@ -13,6 +13,26 @@ body {
   background-color: #f4ede5;
 }
 
+.view-product-button {
+  background-color: #db984c;
+  border-radius: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.view-product-button > div {
+  padding: 10px;
+  font-weight: normal;
+}
+
+.view-product-button:hover {
+  background-color: rgb(199, 140, 73);
+}
+
+.view-product-button:focus {
+  background-color: #a8763d;
+}
+
 .h1,
 .h2,
 .h3,

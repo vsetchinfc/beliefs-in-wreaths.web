@@ -5,6 +5,7 @@ import {
   faTiktok,
 } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'b-in-w-header',
   templateUrl: './header.component.html',

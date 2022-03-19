@@ -215,7 +215,7 @@
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
                             <img id="image-set"
-                                src="/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-60cm-wreath0.png"
+                                src="/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-45cm-wreath0.png"
                                 alt="" class="img-fluid shadow">
                         </div>
                         <div class="col-lg-6 col-md-6 align-self-center py-5">
@@ -231,34 +231,33 @@
                                     Hopping Along Easter Hunt Road Wreath is a perfect colorful Easter Statement.
                                 </p>
                                 <p>
-                                    It is Featured in two sizes: 45 cm and 60 cm and can be purchased in set with
-                                    centrepiece.
+                                    It is Featured in 45 cm and can be purchased in set with centrepiece.
                                 </p>
                                 <div>
                                     <label>
                                         <div class="mb-1"><strong>Select product:</strong></div>
                                         <select type="dropdown" class="form-control" id="productSelectDropdown"
                                             onchange="productSelected()">
-                                            <option value="wreath-60cm">Wreath 60 cm</option>
+                                            <!-- <option value="wreath-60cm">Wreath 60 cm</option> -->
                                             <option value="wreath-45cm">Wreath 45 cm</option>
                                             <option value="candle-holder">Candle Holder</option>
-                                            <option value="60cm-set">Set: Wreath 60 cm with candle
-                                                holder</option>
+                                            <!-- <option value="60cm-set">Set: Wreath 60 cm with candle
+                                                holder</option> -->
                                             <option value="45cm-set">Set: Wreath 45 cm with candle
                                                 holder</option>
                                         </select>
                                     </label>
                                 </div>
-                                <p id="set-60-size" style="display: none;">
+                                <!-- <p id="set-60-size" style="display: none;">
                                     Measurements: wreath diameter 60 cm, candle holder diameter 30 cm
-                                </p>
+                                </p> -->
                                 <p id="set-45-size" style="display: none;">
                                     Measurements: wreath diameter 45 cm, candle holder diameter 30 cm
                                 </p>
-                                <p id="wreath-60-size" style="display: block;">
+                                <!-- <p id="wreath-60-size" style="display: block;">
                                     Measurements: wreath diameter 60 cm
-                                </p>
-                                <p id="wreath-45-size" style="display: none;">
+                                </p> -->
+                                <p id="wreath-45-size" style="display: block;">
                                     Measurements: wreath diameter 45 cm
                                 </p>
                                 <p id="candle-holder-size" style="display: none;">
@@ -272,21 +271,21 @@
                                     </del>
                                 </h4> -->
                                 <div>
-                                    <h3 id="wreath-45-price" style="display: none;">$150.00</h3>
-                                    <h3 id="wreath-60-price">$180.00</h3>
+                                    <h3 id="wreath-45-price" style="display: block;">$150.00</h3>
+                                    <!-- <h3 id="wreath-60-price">$180.00</h3> -->
                                     <h3 id="candle-holder-price" style="display: none;">$120.00</h3>
                                     <h3 id="set-45-price" style="display: none;">$260.00</h3>
-                                    <h3 id="set-60-price" style="display: none;">$290.00</h3>
+                                    <!-- <h3 id="set-60-price" style="display: none;">$290.00</h3> -->
                                     <div class="row">
-                                        <div id="set-60-button" class="col-md-6" style="display: none;">
+                                        <!-- <div id="set-60-button" class="col-md-6" style="display: none;">
                                             <button class="btn btn-primary" onclick="addSet60ToCart()">Add
                                                 Set</button>
-                                        </div>
+                                        </div> -->
                                         <div id="set-45-button" class="col-md-6" style="display: none;">
                                             <button class="btn btn-primary" onclick="addSet45ToCart()">Add
                                                 Set</button>
                                         </div>
-                                        <div id="wreath-45-button" class="col-md-6" style="display: none;">
+                                        <div id="wreath-45-button" class="col-md-6" style="display: block;">
                                             <button id="add-45-wreath-button" class="snipcart-add-item btn btn-primary"
                                                 data-item-id="hopping-along-easter-hunt-road-wreath-45-cm"
                                                 data-item-price="150"
@@ -298,7 +297,7 @@
                                                 Add wreath
                                             </button>
                                         </div>
-                                        <div id="wreath-60-button" class="col-md-6" style="display: block">
+                                        <!-- <div id="wreath-60-button" class="col-md-6" style="display: block">
                                             <button id="add-60-wreath-button" class="snipcart-add-item btn btn-primary"
                                                 data-item-id="hopping-along-easter-hunt-road-wreath-60-cm"
                                                 data-item-price="180"
@@ -309,7 +308,7 @@
                                                 data-item-quantity="1" data-item-max-quantity="1">
                                                 Add wreath
                                             </button>
-                                        </div>
+                                        </div> -->
                                         <div id="candle-holder-button" class="col-md-6" style="display: none">
                                             <button id="add-candle-holder-button"
                                                 class="snipcart-add-item btn btn-primary"
@@ -426,12 +425,12 @@
             var productId = document.getElementById("productSelectDropdown").value;
 
             switch (productId) {
-                case "wreath-60cm":
-                    document.getElementById("image-set").src = "/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-60cm-wreath0.png";
-                    showWreath60cmPrice();
-                    showWreath60cmSize();
-                    showWreath60Button();
-                    break;
+                // case "wreath-60cm":
+                //     document.getElementById("image-set").src = "/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-60cm-wreath0.png";
+                //     showWreath60cmPrice();
+                //     showWreath60cmSize();
+                //     showWreath60Button();
+                //     break;
                 case "wreath-45cm":
                     document.getElementById("image-set").src = "/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-45cm-wreath0.png";
                     showWreath45cmPrice();
@@ -444,12 +443,12 @@
                     showCandleHolderSize();
                     showCandleHolderButton();
                     break;
-                case "60cm-set":
-                    document.getElementById("image-set").src = "/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-60cm-set0.png";
-                    showSet60cmPrice();
-                    showSet60cmSize();
-                    showSet60Button();
-                    break;
+                // case "60cm-set":
+                //     document.getElementById("image-set").src = "/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-60cm-set0.png";
+                //     showSet60cmPrice();
+                //     showSet60cmSize();
+                //     showSet60Button();
+                //     break;
                 case "45cm-set":
                     document.getElementById("image-set").src = "/img/products/wreaths/hopping-along-easter-hunt-road-set/hopping-along-easter-hunt-road-45cm-set0.png";
                     showSet45cmPrice();
@@ -462,12 +461,12 @@
         }
 
         // add set to cart
-        function addSet60ToCart() {
-            var wreath60CartButton = document.getElementById("add-60-wreath-button");
-            wreath60CartButton.click();
+        // function addSet60ToCart() {
+        //     var wreath60CartButton = document.getElementById("add-60-wreath-button");
+        //     wreath60CartButton.click();
 
-            addCandleHolderToCart();
-        }
+        //     addCandleHolderToCart();
+        // }
 
         function addSet45ToCart() {
             var wreath45CartButton = document.getElementById("add-45-wreath-button");
@@ -482,127 +481,127 @@
         }
 
         // show / hide buttons
-        function showWreath60Button() {
-            showElement("wreath-60-button");
-            hideElement("wreath-45-button");
-            hideElement("candle-holder-button");
-            hideElement("set-60-button");
-            hideElement("set-45-button");
-        }
+        // function showWreath60Button() {
+        //     showElement("wreath-60-button");
+        //     hideElement("wreath-45-button");
+        //     hideElement("candle-holder-button");
+        //     hideElement("set-60-button");
+        //     hideElement("set-45-button");
+        // }
 
         function showWreath45Button() {
-            hideElement("wreath-60-button");
+            // hideElement("wreath-60-button");
             showElement("wreath-45-button");
             hideElement("candle-holder-button");
-            hideElement("set-60-button");
+            // hideElement("set-60-button");
             hideElement("set-45-button");
         }
 
         function showCandleHolderButton() {
-            hideElement("wreath-60-button");
+            // hideElement("wreath-60-button");
             hideElement("wreath-45-button");
             showElement("candle-holder-button");
-            hideElement("set-60-button");
+            // hideElement("set-60-button");
             hideElement("set-45-button");
         }
 
-        function showSet60Button() {
-            hideElement("wreath-60-button");
-            hideElement("wreath-45-button");
-            hideElement("candle-holder-button");
-            showElement("set-60-button");
-            hideElement("set-45-button");
-        }
+        // function showSet60Button() {
+        //     hideElement("wreath-60-button");
+        //     hideElement("wreath-45-button");
+        //     hideElement("candle-holder-button");
+        //     showElement("set-60-button");
+        //     hideElement("set-45-button");
+        // }
 
         function showSet45Button() {
-            hideElement("wreath-60-button");
+            // hideElement("wreath-60-button");
             hideElement("wreath-45-button");
             hideElement("candle-holder-button");
-            hideElement("set-60-button");
+            // hideElement("set-60-button");
             showElement("set-45-button");
         }
 
         // Show / Hide Size
-        function showSet60cmSize() {
-            showElement("set-60-size");
-            hideElement("set-45-size");
-            hideElement("wreath-60-size");
-            hideElement("wreath-45-size");
-            hideElement("candle-holder-size");
-        }
+        // function showSet60cmSize() {
+        //     showElement("set-60-size");
+        //     hideElement("set-45-size");
+        //     hideElement("wreath-60-size");
+        //     hideElement("wreath-45-size");
+        //     hideElement("candle-holder-size");
+        // }
 
         function showSet45cmSize() {
-            hideElement("set-60-size");
+            // hideElement("set-60-size");
             showElement("set-45-size");
-            hideElement("wreath-60-size");
+            // hideElement("wreath-60-size");
             hideElement("wreath-45-size");
             hideElement("candle-holder-size");
         }
 
-        function showWreath60cmSize() {
-            hideElement("set-60-size");
-            hideElement("set-45-size");
-            showElement("wreath-60-size");
-            hideElement("wreath-45-size");
-            hideElement("candle-holder-size");
-        }
+        // function showWreath60cmSize() {
+        //     hideElement("set-60-size");
+        //     hideElement("set-45-size");
+        //     showElement("wreath-60-size");
+        //     hideElement("wreath-45-size");
+        //     hideElement("candle-holder-size");
+        // }
 
         function showWreath45cmSize() {
-            hideElement("set-60-size");
+            // hideElement("set-60-size");
             hideElement("set-45-size");
-            hideElement("wreath-60-size");
+            // hideElement("wreath-60-size");
             showElement("wreath-45-size");
             hideElement("candle-holder-size");
         }
 
         function showCandleHolderSize() {
-            hideElement("set-60-size");
+            // hideElement("set-60-size");
             hideElement("set-45-size");
-            hideElement("wreath-60-size");
+            // hideElement("wreath-60-size");
             hideElement("wreath-45-size");
             showElement("candle-holder-size");
         }
 
         // show / hide price
-        function showWreath60cmPrice() {
-            showElement("wreath-60-price");
-            hideElement("wreath-45-price");
-            hideElement("candle-holder-price");
-            hideElement("set-45-price");
-            hideElement("set-60-price");
-        }
+        // function showWreath60cmPrice() {
+        //     showElement("wreath-60-price");
+        //     hideElement("wreath-45-price");
+        //     hideElement("candle-holder-price");
+        //     hideElement("set-45-price");
+        //     hideElement("set-60-price");
+        // }
 
         function showWreath45cmPrice() {
             showElement("wreath-45-price");
-            hideElement("wreath-60-price");
+            // hideElement("wreath-60-price");
             hideElement("candle-holder-price");
             hideElement("set-45-price");
-            hideElement("set-60-price");
+            // hideElement("set-60-price");
         }
 
         function showCandleHolderPrice() {
             showElement("candle-holder-price");
-            hideElement("wreath-60-price");
+            // hideElement("wreath-60-price");
             hideElement("wreath-45-price");
             hideElement("set-45-price");
-            hideElement("set-60-price");
+            // hideElement("set-60-price");
         }
 
         function showSet45cmPrice() {
             showElement("set-45-price");
-            hideElement("wreath-60-price");
+            // hideElement("wreath-60-price");
             hideElement("wreath-45-price");
             hideElement("candle-holder-price");
-            hideElement("set-60-price");
+            // hideElement("set-60-price");
         }
 
-        function showSet60cmPrice() {
-            showElement("set-60-price");
-            hideElement("wreath-60-price");
-            hideElement("wreath-45-price");
-            hideElement("candle-holder-price");
-            hideElement("set-45-price");
-        }
+        // function showSet60cmPrice() {
+        //     showElement("set-60-price");
+        //     hideElement("wreath-60-price");
+        //     hideElement("wreath-45-price");
+        //     hideElement("candle-holder-price");
+        //     hideElement("set-45-price");
+        // }
     </script>
 </body>
 

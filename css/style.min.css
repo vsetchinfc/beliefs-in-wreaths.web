@@ -2,6 +2,12 @@
  *	Resto by GetTemplates.co
  *	URL: https://gettemplates.co
  */
+
+/* Variables */
+:root {
+  --item-red: #f34949;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -35,7 +41,7 @@ h2 {
 }
 
 .subheading {
-  color: #f34949;
+  color: var(--item-red);
   margin-bottom: 20px;
 }
 
@@ -48,11 +54,16 @@ h2 {
 }
 
 .item-sold {
-  color: #f34949;
+  color: var(--item-red);
+}
+
+.item-on-sale {
+  color: var(--item-red);
+  font-weight: bold;
 }
 
 a {
-  color: #f34949;
+  color: var(--item-red);
 }
 
 button > i {
@@ -144,7 +155,7 @@ a:hover {
 }
 #navbar-header .navbar-nav .dropdown-menu {
   border: none;
-  border-bottom: 2px solid #f34949;
+  border-bottom: 2px solid var(--item-red);
   border-radius: 0 !important;
   box-shadow: -5px 8px 20px 0px rgba(229, 16, 2, 0.15);
 }
@@ -171,8 +182,8 @@ a:hover {
 
 .btn-primary {
   display: inline-block;
-  background-color: #f34949;
-  border-color: #f34949;
+  background-color: var(--item-red);
+  border-color: var(--item-red);
   color: #fff;
   border-radius: 30px;
   padding: 9px 25px;
@@ -337,7 +348,7 @@ a:hover {
   font-weight: 500;
 }
 .testi-content .testi-desc span {
-  color: #f34949;
+  color: var(--item-red);
   font-weight: bold;
 }
 .testi-content .owl-dots {
@@ -592,7 +603,7 @@ a:hover {
 }
 
 #gtco-special-dishes h3 span {
-  color: #f34949;
+  color: var(--item-red);
 }
 
 .dishes-text {

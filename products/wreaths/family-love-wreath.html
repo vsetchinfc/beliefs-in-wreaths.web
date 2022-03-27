@@ -208,13 +208,10 @@
                 <div class="section-content">
                     <div class="heading-section text-center">
                         <div class="subheading">
-                            Easter Wreaths
+                            <h4>Easter Wreaths</h4>
                         </div>
-                        <h2>
-                            Family Love Wreath
-                        </h2>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row">
                         <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
                             <img src="/img/products/wreaths/family-love-wreath/family-love-wreath0.png" alt=""
                                 class="img-fluid shadow">
@@ -222,6 +219,29 @@
                         <div class="col-lg-6 col-md-6 align-self-center py-5">
                             <!-- <h2 class="special-number">01.</h2> -->
                             <div class="dishes-text">
+                                <h2>
+                                    Family Love Wreath
+                                </h2>
+                                <!-- start product price -->
+                                <div id="product-sale" style="display: none;">
+                                    <h4 class="item-on-sale">SALE</h4>
+                                    <h4 class="text-muted">
+                                        RRP:
+                                        <del>
+                                            $150
+                                        </del>
+                                    </h4>
+                                </div>
+                                <div id="product-sale-price"></div>
+                                <button class="snipcart-add-item btn btn-primary" data-item-id="family-love-wreath"
+                                    data-item-price="150" data-item-url="/products/wreaths/family-love-wreath.html"
+                                    data-item-description="Family Love Wreath"
+                                    data-item-image="/img/products/wreaths/family-love-wreath/family-love-wreath0.png"
+                                    data-item-name="Family Love Wreath" data-item-quantity="1"
+                                    data-item-max-quantity="1">
+                                    Add to cart
+                                </button>
+                                <!-- end product price -->
                                 <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
                                 <p class="pt-3">
                                     Give your home a splash of Easter energy with our Family Love Wreath.
@@ -237,22 +257,6 @@
                                 <p>
                                     Measurements: 45 cm in diameter
                                 </p>
-                                <!-- Clearance
-                                <h4 class="text-muted">
-                                    RRP:
-                                    <del>
-                                        $150
-                                    </del>
-                                </h4> -->
-                                <h3 class="special-dishes-price">$150.00</h3>
-                                <button class="snipcart-add-item btn btn-primary" data-item-id="family-love-wreath"
-                                    data-item-price="150" data-item-url="/products/wreaths/family-love-wreath.html"
-                                    data-item-description="Family Love Wreath"
-                                    data-item-image="/img/products/wreaths/family-love-wreath/family-love-wreath0.png"
-                                    data-item-name="Family Love Wreath" data-item-quantity="1"
-                                    data-item-max-quantity="1">
-                                    Add to cart
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -348,6 +352,12 @@
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
         data-config-modal-style="side"></div>
+
+    <script>
+        $(document).ready(function () {
+            showProductPageSalePrice('product-sale', 'product-sale-price', 150);
+        });
+    </script>
 </body>
 
 </html>

@@ -210,9 +210,6 @@
                         <div class="subheading">
                             All Year Wreaths
                         </div>
-                        <h2>
-                            Lavender Sunset Wreath
-                        </h2>
                     </div>
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
@@ -222,25 +219,22 @@
                         <div class="col-lg-6 col-md-6 align-self-center py-5">
                             <!-- <h2 class="special-number">01.</h2> -->
                             <div class="dishes-text">
-                                <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
-                                <p class="pt-3">A new idea, a new way to celebrate your happiness. This splendid
-                                    lavender universal Wreath is one of a kind but not alone. Occasions of many
-                                    forms
-                                    can be celebrated year-round. Ponder over this Lavender Sun Set Peonies with
-                                    natural
-                                    but Classic Rosebuds, Daffodil Tulips, as well classic Belief’s n Wreaths
-                                    leaves,
-                                    Twigs and Hydrangeas. Occasions are not always set to Calendar. Enjoy!
-                                    Designed to enhance all styles of decor. Ideal presentation for a front door and
-                                    marvelous for entry halls and especially bursting any room in your home to life.
-                                    All materials are faux and designed for a lifetime of enjoyment.
-
-                                    Measurements: diameter 43 cm, weight 946 gr.
-
-                                    For special occasions congratulatory. personalized or milestone events cards
-                                    reflecting the occasion can be added for that professional touch.
-                                </p>
-                                <h3 class="special-dishes-price">$145.00</h3>
+                                <h2>
+                                    Lavender Sunset Wreath
+                                </h2>
+                                <!-- <h4 class="item-sold">SOLD</h4>
+                                New orders welcome. Contact us and we will be happy to create similar wreath for you. -->
+                                <!-- start product price -->
+                                <div id="product-sale" style="display: none;">
+                                    <h4 class="item-on-sale">SALE</h4>
+                                    <h4 class="text-muted">
+                                        RRP:
+                                        <del>
+                                            $145
+                                        </del>
+                                    </h4>
+                                </div>
+                                <div id="product-sale-price"></div>
                                 <button class="snipcart-add-item btn btn-primary" data-item-id="lavender-sunset-wreath"
                                     data-item-price="145" data-item-url="/products/wreaths/lavender-sunset-wreath.html"
                                     data-item-description="Lavender Sunset Wreath"
@@ -249,6 +243,24 @@
                                     data-item-max-quantity="1">
                                     Add to cart
                                 </button>
+                                <!-- end product price -->
+                                <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
+                                <p class="pt-3">A new idea, a new way to celebrate your happiness. This splendid
+                                    lavender universal Wreath is one of a kind but not alone. Occasions of many
+                                    forms can be celebrated year-round. Ponder over this Lavender Sun Set Peonies with
+                                    natural but Classic Rosebuds, Daffodil Tulips, as well classic Belief’s n Wreaths
+                                    leaves, foliage. Designed to enhance all styles of decor. Ideal presentation for a
+                                    front door and
+                                    marvelous for entry halls and especially bursting any room in your home to life.
+                                    All materials are faux and designed for a lifetime of enjoyment.
+                                </p>
+                                <p>
+                                    Measurements: diameter 43 cm, weight 946 gr.
+                                </p>
+                                <p>
+                                    For special occasions congratulatory. personalized or milestone events cards
+                                    reflecting the occasion can be added for that professional touch.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -344,6 +356,12 @@
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
         data-config-modal-style="side"></div>
+
+    <script>
+        $(document).ready(function () {
+            showProductPageSalePrice('product-sale', 'product-sale-price', 145);
+        });
+    </script>
 </body>
 
 </html>

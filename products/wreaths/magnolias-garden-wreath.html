@@ -210,9 +210,6 @@
                         <div class="subheading">
                             Christmas Wreaths
                         </div>
-                        <h2>
-                            Magnolias Garden Wreath
-                        </h2>
                     </div>
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
@@ -222,6 +219,31 @@
                         <div class="col-lg-6 col-md-6 align-self-center py-5">
                             <!-- <h2 class="special-number">01.</h2> -->
                             <div class="dishes-text">
+                                <h2>
+                                    Magnolias Garden Wreath
+                                </h2>
+                                <!-- <h4 class="item-sold">SOLD</h4>
+                                New orders welcome. Contact us and we will be happy to create similar wreath for you. -->
+                                <!-- start product price -->
+                                <div id="product-sale" style="display: none;">
+                                    <h4 class="item-on-sale">SALE</h4>
+                                    <h4 class="text-muted">
+                                        RRP:
+                                        <del>
+                                            $160
+                                        </del>
+                                    </h4>
+                                </div>
+                                <div id="product-sale-price"></div>
+                                <button class="snipcart-add-item btn btn-primary" data-item-id="magnolias-garden-wreath"
+                                    data-item-price="160" data-item-url="/products/wreaths/magnolias-garden-wreath.html"
+                                    data-item-description="Magnolias Garden Wreath"
+                                    data-item-image="/img/products/wreaths/magnolias-garden-wreath/magnolias-garden-wreath0.png"
+                                    data-item-name="Magnolias Garden Wreath" data-item-quantity="1"
+                                    data-item-max-quantity="1">
+                                    Add to cart
+                                </button>
+                                <!-- end product price -->
                                 <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
                                 <p class="pt-3">You can’t go wrong with our just launched Magnolias Christmas Garden
                                     Wreath.
@@ -235,15 +257,6 @@
                                 <p class="pt-3">
                                     Measurements: diameter 60cm
                                 </p>
-                                <h3 class="special-dishes-price">$160.00</h3>
-                                <button class="snipcart-add-item btn btn-primary" data-item-id="magnolias-garden-wreath"
-                                    data-item-price="160" data-item-url="/products/wreaths/magnolias-garden-wreath.html"
-                                    data-item-description="Magnolias Garden Wreath"
-                                    data-item-image="/img/products/wreaths/magnolias-garden-wreath/magnolias-garden-wreath0.png"
-                                    data-item-name="Magnolias Garden Wreath" data-item-quantity="1"
-                                    data-item-max-quantity="1">
-                                    Add to cart
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -314,6 +327,11 @@
                         <p class="mx-auto text-center mb-0">Copyright © 2022 Beliefs in Wreaths. All Right Reserved.</p>
                     </div>
 
+                    <script>
+                        $(document).ready(function () {
+                            showProductPageSalePrice('product-sale', 'product-sale-price', 160);
+                        });
+                    </script>
                 </div>
             </div>
         </footer>
@@ -339,6 +357,12 @@
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
         data-config-modal-style="side"></div>
+
+    <script>
+        $(document).ready(function () {
+            showProductPageSalePrice('product-sale', 'product-sale-price', 160);
+        });
+    </script>
 </body>
 
 </html>

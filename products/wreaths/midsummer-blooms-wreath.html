@@ -67,7 +67,6 @@
         <a href="javascript:void(0)" id="side-search-close">&times;</a>
         <div class="sidenav-content">
             <form action="">
-
                 <div class="input-group md-form form-sm form-2 pl-0">
                     <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search"
                         aria-label="Search">
@@ -77,11 +76,8 @@
                         </button>
                     </div>
                 </div>
-
             </form>
         </div>
-
-
     </div>
     <div id="canvas-overlay"></div>
     <div class="boxed-page">
@@ -222,6 +218,31 @@
                         <div class="col-lg-6 col-md-6 align-self-center py-5">
                             <!-- <h2 class="special-number">01.</h2> -->
                             <div class="dishes-text">
+                                <h2>
+                                    Midsummer Blooms Wreath
+                                </h2>
+                                <!-- <h4 class="item-sold">SOLD</h4>
+                                New orders welcome. Contact us and we will be happy to create similar wreath for you. -->
+                                <!-- start product price -->
+                                <div id="product-sale" style="display: none;">
+                                    <h4 class="item-on-sale">SALE</h4>
+                                    <h4 class="text-muted">
+                                        RRP:
+                                        <del>
+                                            $150
+                                        </del>
+                                    </h4>
+                                </div>
+                                <div id="product-sale-price"></div>
+                                <button class="snipcart-add-item btn btn-primary" data-item-id="midsummer-blooms-wreath"
+                                    data-item-price="150" data-item-url="/products/wreaths/midsummer-blooms-wreath.html"
+                                    data-item-description="Midsummer Blooms Wreath"
+                                    data-item-image="/img/products/wreaths/midsummer-blooms-wreath/midsummer-blooms-wreath0.0.png"
+                                    data-item-name="Midsummer Blooms Wreath" data-item-quantity="1"
+                                    data-item-max-quantity="1">
+                                    Add to cart
+                                </button>
+                                <!-- end product price -->
                                 <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
                                 <p class="pt-3">
                                     Are you enjoying summertime? Don’t want the Summer to end? Extend Summer Season at
@@ -247,17 +268,6 @@
                                 <p>
                                     Measurements: 55cm in diameter with branches
                                 </p>
-                                <h3 class="special-dishes-price">$150.00</h3>
-                                <!-- <h4 class="item-sold">SOLD</h4>
-                                New orders welcome. Contact us and we will be happy to create similar wreath for you. -->
-                                <button class="snipcart-add-item btn btn-primary" data-item-id="midsummer-blooms-wreath"
-                                    data-item-price="150" data-item-url="/products/wreaths/midsummer-blooms-wreath.html"
-                                    data-item-description="Midsummer Blooms Wreath"
-                                    data-item-image="/img/products/wreaths/midsummer-blooms-wreath/midsummer-blooms-wreath0.0.png"
-                                    data-item-name="Midsummer Blooms Wreath" data-item-quantity="1"
-                                    data-item-max-quantity="1">
-                                    Add to cart
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -353,6 +363,12 @@
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
         data-config-modal-style="side"></div>
+
+    <script>
+        $(document).ready(function () {
+            showProductPageSalePrice('product-sale', 'product-sale-price', 150);
+        });
+    </script>
 </body>
 
 </html>

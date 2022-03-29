@@ -208,9 +208,6 @@
                         <div class="subheading">
                             All Year Wreaths
                         </div>
-                        <h2>
-                            Toffee and Cream Wreath
-                        </h2>
                     </div>
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
@@ -220,6 +217,31 @@
                         <div class="col-lg-6 col-md-6 align-self-center py-5">
                             <!-- <h2 class="special-number">01.</h2> -->
                             <div class="dishes-text">
+                                <h2>
+                                    Toffee and Cream Wreath
+                                </h2>
+                                <!-- <h4 class="item-sold">SOLD</h4>
+                                New orders welcome. Contact us and we will be happy to create similar wreath for you. -->
+                                <!-- start product price -->
+                                <div id="product-sale" style="display: none;">
+                                    <h4 class="item-on-sale">SALE</h4>
+                                    <h4 class="text-muted">
+                                        RRP:
+                                        <del>
+                                            $150
+                                        </del>
+                                    </h4>
+                                </div>
+                                <div id="product-sale-price"></div>
+                                <button class="snipcart-add-item btn btn-primary" data-item-id="toffee-and-cream-wreath"
+                                    data-item-price="150" data-item-url="/products/wreaths/toffee-and-cream-wreath.html"
+                                    data-item-description="Toffee and Cream Wreath"
+                                    data-item-image="/img/products/wreaths/toffee-and-cream-wreath/toffee-and-cream-wreath0.png"
+                                    data-item-name="Toffee and Cream Wreath" data-item-quantity="1"
+                                    data-item-max-quantity="1">
+                                    Add to cart
+                                </button>
+                                <!-- end product price -->
                                 <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
                                 <p class="pt-3">Impress with this real to touch Tessa Blush Roses Toffee & Cream
                                     Wreath. Cabbage Rose, Pomegranate’s, the Creamy Blush Peonies and Peony Buds
@@ -236,15 +258,6 @@
                                     For special occasions congratulatory. personalized or milestone events cards
                                     reflecting the occasion can be added for that professional touch.
                                 </p>
-                                <h3 class="special-dishes-price">$150.00</h3>
-                                <button class="snipcart-add-item btn btn-primary" data-item-id="toffee-and-cream-wreath"
-                                    data-item-price="150" data-item-url="/products/wreaths/toffee-and-cream-wreath.html"
-                                    data-item-description="Toffee and Cream Wreath"
-                                    data-item-image="/img/products/wreaths/toffee-and-cream-wreath/toffee-and-cream-wreath0.png"
-                                    data-item-name="Toffee and Cream Wreath" data-item-quantity="1"
-                                    data-item-max-quantity="1">
-                                    Add to cart
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -340,6 +353,12 @@
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
         data-config-modal-style="side"></div>
+
+    <script>
+        $(document).ready(function () {
+            showProductPageSalePrice('product-sale', 'product-sale-price', 150);
+        });
+    </script>
 </body>
 
 </html>

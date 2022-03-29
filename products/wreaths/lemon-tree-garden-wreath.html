@@ -210,9 +210,6 @@
                         <div class="subheading">
                             All Year Wreaths
                         </div>
-                        <h2>
-                            Lemon Tree Garden Wreath
-                        </h2>
                     </div>
                     <div class="row mt-5">
                         <div class="col-lg-6 col-md-6 align-self-center mt-4 mt-md-0">
@@ -222,6 +219,30 @@
                         <div class="col-lg-6 col-md-6 align-self-center py-5">
                             <!-- <h2 class="special-number">01.</h2> -->
                             <div class="dishes-text">
+                                <h2>
+                                    Lemon Tree Garden Wreath
+                                </h2>
+                                <!-- start product price -->
+                                <div id="product-sale" style="display: none;">
+                                    <h4 class="item-on-sale">SALE</h4>
+                                    <h4 class="text-muted">
+                                        RRP:
+                                        <del>
+                                            $175
+                                        </del>
+                                    </h4>
+                                </div>
+                                <div id="product-sale-price"></div>
+                                <button class="snipcart-add-item btn btn-primary"
+                                    data-item-id="lemon-tree-garden-wreath" data-item-price="175"
+                                    data-item-url="/products/wreaths/lemon-tree-garden-wreath.html"
+                                    data-item-description="Lemon Tree Garden Wreath"
+                                    data-item-image="/img/products/wreaths/lemon-tree-garden-wreath/lemon-tree-garden-wreath0.png"
+                                    data-item-name="Lemon Tree Garden Wreath" data-item-quantity="1"
+                                    data-item-max-quantity="1">
+                                    Add to cart
+                                </button>
+                                <!-- end product price -->
                                 <!-- <h3><span>Beef</span><br> Steak Sauce</h3> -->
                                 <p class="pt-3">Our Lemon Tree Garden Wreath will help you create summer vibes at home
                                     regardless of the Season, as this citrus-infused rattan base Wreath will give a
@@ -244,18 +265,6 @@
                                 <p>
                                     Measurements: Diameter with branches 56 cm
                                 </p>
-                                <h3 class="special-dishes-price">$175.00</h3>
-                                <!-- <h4 class="item-sold">SOLD</h4>
-                                New orders welcome. Contact us and we will be happy to create similar wreath for you. -->
-                                <button class="snipcart-add-item btn btn-primary"
-                                    data-item-id="lemon-tree-garden-wreath" data-item-price="175"
-                                    data-item-url="/products/wreaths/lemon-tree-garden-wreath.html"
-                                    data-item-description="Lemon Tree Garden Wreath"
-                                    data-item-image="/img/products/wreaths/lemon-tree-garden-wreath/lemon-tree-garden-wreath0.png"
-                                    data-item-name="Lemon Tree Garden Wreath" data-item-quantity="1"
-                                    data-item-max-quantity="1">
-                                    Add to cart
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -351,6 +360,12 @@
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
     <div hidden id="snipcart" data-api-key="N2IwYTYyYzItMzIwMi00ZTI3LTk5MTYtOTE1N2E5Nzk3ZWM3NjM3NjQ2Mjc1NTIzMTcxNjg5"
         data-config-modal-style="side"></div>
+
+    <script>
+        $(document).ready(function () {
+            showProductPageSalePrice('product-sale', 'product-sale-price', 175);
+        });
+    </script>
 </body>
 
 </html>

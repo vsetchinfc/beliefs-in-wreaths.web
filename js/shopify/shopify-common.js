@@ -32,6 +32,15 @@ function createFullPageComponent(ui, elementId, productId) {
   });
 }
 
+function createCollectionDetailsComponent(ui, elementId, collectionId) {
+  ui.createComponent("collection", {
+    id: collectionId,
+    node: document.getElementById(elementId),
+    moneyFormat: getMoneyFormat(),
+    options: getCollectionViewOptions(),
+  });
+}
+
 function getMoneyFormat() {
   return "%24%7B%7Bamount%7D%7D";
 }
@@ -320,6 +329,111 @@ function getFullProductViewOptions() {
           "font-weight": "normal",
           "font-size": "15.299999999999999px",
           color: "#4c4c4c",
+        },
+      },
+      text: {
+        button: "Add to cart",
+      },
+    },
+    option: {},
+    cart: {
+      styles: {
+        button: {
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          "background-color": "#f90000",
+          ":focus": {
+            "background-color": "#e00000",
+          },
+          "border-radius": "40px",
+        },
+      },
+      text: {
+        total: "Subtotal",
+        button: "Checkout",
+      },
+    },
+    toggle: {
+      styles: {
+        toggle: {
+          "background-color": "#f90000",
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          ":focus": {
+            "background-color": "#e00000",
+          },
+        },
+      },
+    },
+  };
+}
+
+function getCollectionViewOptions() {
+  return {
+    product: {
+      styles: {
+        product: {
+          "@media (min-width: 601px)": {
+            "ma`x-width": "calc(25% - 20px)",
+            "margin-left": "20px",
+            "margin-bottom": "50px",
+            width: "calc(25% - 20px)",
+          },
+        },
+        button: {
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          "background-color": "#f90000",
+          ":focus": {
+            "background-color": "#e00000",
+          },
+          "border-radius": "40px",
+        },
+      },
+      buttonDestination: "modal",
+      contents: {
+        options: false,
+      },
+      text: {
+        button: "View product",
+      },
+    },
+    productSet: {
+      styles: {
+        products: {
+          "@media (min-width: 601px)": {
+            "margin-left": "-20px",
+          },
+        },
+      },
+    },
+    modalProduct: {
+      contents: {
+        img: false,
+        imgWithCarousel: true,
+        button: false,
+        buttonWithQuantity: true,
+      },
+      styles: {
+        product: {
+          "@media (min-width: 601px)": {
+            "max-width": "100%",
+            "margin-left": "0px",
+            "margin-bottom": "0px",
+          },
+        },
+        button: {
+          ":hover": {
+            "background-color": "#e00000",
+          },
+          "background-color": "#f90000",
+          ":focus": {
+            "background-color": "#e00000",
+          },
+          "border-radius": "40px",
         },
       },
       text: {

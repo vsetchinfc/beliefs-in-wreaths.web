@@ -400,6 +400,18 @@ function getCollectionViewOptions() {
       text: {
         button: "View product",
       },
+      events: {
+        // addVariantToCart: function (product) {},
+        // updateQuantity: function (product) {},
+        openModal: function (product) {
+          // TIP: uncomment line below to see and product handle
+          console.log("Product handle: " + product.viewData.handle);
+          window.location.href =
+            "/products/wreaths/" + product.viewData.handle + ".html";
+        },
+        // openOnlineStore: function (product) {},
+        // openCheckout: function (product) {},
+      },
     },
     productSet: {
       styles: {

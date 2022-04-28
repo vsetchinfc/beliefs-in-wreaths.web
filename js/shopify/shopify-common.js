@@ -404,10 +404,10 @@ function getCollectionViewOptions() {
         // addVariantToCart: function (product) {},
         // updateQuantity: function (product) {},
         openModal: function (product) {
-          // TIP: uncomment line below to see and product handle
-          console.log("Product handle: " + product.viewData.handle);
-          window.location.href =
-            "/products/wreaths/" + product.viewData.handle + ".html";
+          debugger;
+          // TIP: uncomment line below to see and product id
+          console.log("Product handle: " + product.viewData.id);
+          window.location.href = `/products/product-details.html?productId=${product.viewData.id}`;
         },
         // openOnlineStore: function (product) {},
         // openCheckout: function (product) {},

@@ -28,6 +28,11 @@
 
   function ShopifyBuyInit() {
     var client = buildClient();
+
+    var shopifyProductId = atob(productIdHash);
+
+    var productId = shopifyProductId.split("Product/")[1];
+
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       createFullPageComponent(ui, productElementId, productId);
     });

@@ -22,6 +22,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
 
+    <!-- cookiealert styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+
     <!-- Fonts -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
@@ -36,6 +39,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRY3LN2CX"></script>
+    <!-- <script src=/js/google.analytics.js"></script> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207409102-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -78,13 +83,16 @@
             </form>
         </div>
     </div>
+
     <div id="canvas-overlay"></div>
     <div class="boxed-page">
         <div class="container">
             <div class="row align-items-center text-center">
-                <h4 class="m-3 item-sold">
-                    <div id="notification-container"></div>
-                </h4>
+                <div class="col-lg-12 col-md-12">
+                    <h4 class="m-3 item-sold">
+                        <div id="notification-container"></div>
+                    </h4>
+                </div>
             </div>
             <div class="row align-items-center text-center">
                 <div class="col-lg-4">
@@ -117,7 +125,7 @@
         <nav id="navbar-header" class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
-                    <img src="img/b-in-w-logo.png" alt="">
+                    <img src="/img/b-in-w-logo.png" alt="">
                 </a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -125,7 +133,7 @@
                     <span class="lnr lnr-menu"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex justify-content-between">
                         <li class="nav-item only-desktop">
                             <a class="nav-link" id="side-nav-open" href="#">
@@ -133,14 +141,13 @@
                             </a>
                         </li>
                         <div class="d-flex flex-lg-row flex-column">
+
                             <li class="nav-item active">
                                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/products/index.html">Products</a>
-                            </li>
+
                             <!-- TODO: uncomment menu after adding more pages -->
-                            <!-- <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
                             </li> -->
 
@@ -158,7 +165,7 @@
                     </ul>
 
                     <!-- <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
-                        <img src="img/b-in-w-logo.png" alt="">
+                        <img src="/img/b-in-w-logo.png" alt="">
                     </a> -->
                     <!-- <ul class="navbar-nav d-flex justify-content-between">
                         <div class="d-flex flex-lg-row flex-column">
@@ -183,15 +190,39 @@
             </div>
         </nav>
 
-        <!-- Special Dishes Section -->
-        <section id="gtco-special-dishes" class="bg-grey section-padding">
+        <!-- Products Section -->
+
+        <!-- Spring is in the Air Wreath		$150	spring-is-in-the-air-wreath.jpg
+        Merging Hues of Pink Wreath		$150	merging-hues-of-pink-wreath.jpg
+        Toffee and Cream Wreath			$150	toffee-and-cream-wreath.jpg
+        Summer Vibes Wreath				$180	summer-vibes-wreath.jpg
+        Sparkling Rosè Wreath			$170	sparkling-rose-wreath.jpg
+        Beaut Jute Wreath				$125	beaut-jute-wreath.jpg
+        Raspberry Lemonade Wreath		$135	raspberry-lemonade-wreath.jpg
+        Lemoncello Mood Wreath			$125	lemoncello-mood-wreath.jpg
+        Lavender Sunset Wreath			$145	lavender-sunset-wreath.jpg
+        Floral Tranquillity Wreath		$130	floral-tranquillity-wreath.jpg
+        Condensed Floral Easter Wreath	$150	condensed-floral-easter-wreath.jpg
+        Autumn Colours Easter Wreath	$150	autumn-colours-easter-wreath.jpg -->
+
+
+        <section id="gtco-menu" class="section-padding">
             <div class="container">
                 <div class="section-content">
-                    <div id='product-full-details'></div>
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <div class="heading-section text-center">
+                                <h2>
+                                    Wreaths <h5><a href="/products/index.html">See all products</a></h5>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='collection-details'></div>
                 </div>
             </div>
         </section>
-        <!-- End of Special Dishes Section -->
+        <!-- End of products Section -->
         <footer class="mastfoot pb-5 bg-white section-padding pb-0">
             <div class="inner container">
                 <div class="row">
@@ -254,14 +285,18 @@
                     <div class="col-md-12 d-flex align-items-center">
                         <p class="mx-auto text-center mb-0">Copyright © 2022 Beliefs in Wreaths. All Right Reserved.</p>
                     </div>
-
                 </div>
             </div>
         </footer>
     </div>
 
+    <!-- cookie-alert -->
+    <div id="cookie-alert-container"></div>
+
+    <!-- Main JS -->
+    <script src="/js/app.min.js "></script>
+
     <!-- External JS -->
-    <script src="http://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="/vendor/bootstrap/popper.min.js"></script>
@@ -273,19 +308,19 @@
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Main JS -->
-    <script src="/js/app.min.js "></script>
+    <!-- Include cookiealert script -->
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 
-    <!-- Shopify -->
-    <script>
-        var productElementId = "product-full-details";
-        var productIdHash = getUrlParameter('productId', document.URL);
-
-        // TODO: if productIdHash not found redirect to 404 page
+    <!-- shopify -->
+    <script type="text/javascript">
+        debugger;
+        const collectionElementId = 'collection-details';
+        var collectionId = getUrlParameter('collectionId', document.URL);
+        // TODO: if collection Id not found redirect to 404 page
     </script>
 
     <script src="/js/shopify/shopify-common.js"></script>
-    <script src="/js/shopify/full_product_details.js"></script>
+    <script src="/js/shopify/collection_details.js"></script>
 </body>
 
 </html>
